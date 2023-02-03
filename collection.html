@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the stinkster</title>
+    <link href="./css/collection.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="home"><a href="./index.html">feed</a></li>
+                <li id="bookmarks" class="underline"><a href="./collection.html">my collection</a></li>
+                <li id="contact"><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <div class="collectionHeader">
+            <h2 class="heading"><span style="font-style: italic">your</span> stinkster</h2>
+            <p class="subtitle">everything you bookmark ends up here</p>
+        </div>
+        <div class="spotlightHeader">
+            <h2 class="spotHeading">stinkster spotlight</h2>
+            <p class="spotSubtitle">&lt;-- click to go back to collection</p>
+        </div>
+    </header>
+    <main>
+        <div class="article-grid">
+            <!-- <div class="statpad">
+                <div class="information">
+                    <h1 class="statistics">of all the stinkers on this app, you have saved:</h1>
+                    <h1 class="number">9</h1>
+                </div>
+            </div> -->
+        </div>
+        <div class="spotlight-canvas">
+            <div class="article-canvas">
+                <h2 class="spotlightTitle"></h2>
+                <p class="spotlightDate"></p>
+                <p class="spotlightText"></p>
+                <div class="interactivity">
+                    <button type="button" class="spotlight-like-button">like</button>
+                    <button type="button" class="spotlight-bookmark-button">bookmark</button>
+                </div>
+            </div>
+            <div class="comment-section">
+                <textarea class='add-comment' placeholder="Press enter to add your comment. Your comment must have at least 10 characters."></textarea>
+                <div class="divider">
+                    <p>* * *</p>
+                </div>
+                <div class="comment-tray"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/collection.js"></script>
+</body>
+</html>

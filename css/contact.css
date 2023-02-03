@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif; 
+    color: #5b616b; 
+}
+
+
+
+/* STYLING FOR THE NAV BAR */
+
+body {
+    background-color: #fbefe4;
+}
+
+header {
+    height: 20%;  
+}
+
+nav {
+    margin: 5vh auto;
+    width: 85%; 
+}
+
+a {
+    text-decoration: none; 
+    color: #5b616b; 
+}
+
+ul {
+    list-style: none; 
+    text-align: right; 
+}
+
+.underline {
+    border-bottom: 4px solid; 
+}
+
+li {
+    display: inline; 
+    margin: 1% 3%; 
+    text-decoration: none;
+    color: #5b616b;  
+    padding-bottom: 5px; 
+    text-align: center;
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+
+/* TITLE */
+
+.description {
+    padding-right: 80px; 
+}
+
+.heading {
+    margin: 10px 0 20px;
+    font-size: 3.5rem;
+}
+
+.divider {
+    font-size: 2rem; 
+    margin: 0 0 15px 5px; 
+}
+
+.subtitle {
+    font-size: 1.25rem; 
+    margin: 0 0 20px 5px; 
+    line-height: 1.75rem;
+}
+
+.link {
+    text-decoration: underline; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+/* MAIN SECTION */
+
+.form-grid {
+    width: 80%; 
+    margin: 40px auto; 
+    display: grid; 
+    grid-template-columns: 35% 60%;
+    justify-content: space-between;
+}
+
+/* ARTICLE CARDS */ 
+
+.article-compact {
+    background-color: #fff;
+    box-shadow: 0px 15px #5b616b; 
+    height: 400px; 
+    padding: 20px; 
+    margin-bottom: 4vw; 
+    border: solid 5px; 
+    border-radius: 10px; 
+}
+
+.article-compact:hover {
+    background-color: #dbf9df; 
+    cursor: pointer; 
+    transition: all 0.25s ease-in-out;    
+}
+
+.article-compact button:hover {
+    cursor: pointer; 
+}
+
+.article-compact button:active {
+    box-shadow: none; 
+    height: 35px; 
+}
+
+button {
+    background-color: white;
+    width: 100%; 
+    padding: 6px 12px; 
+    height: 80px; 
+    border: 5px solid; 
+    font-size: 1rem;
+    font-weight: 900;  
+    box-shadow: 0px 8px; 
+    border-radius: 10px; 
+    z-index: 1; 
+}
+
+.buttonarea {
+    height: 80px; 
+}
+
+button:hover {
+    cursor: pointer; 
+}
+
+button:active {
+    box-shadow: 0 5px; 
+    height: 75px; 
+}
+
+textarea {
+    width: 100%; 
+    height: 350px; 
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 5px;
+    box-shadow: 0 10px; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+}
+
+textarea:focus {
+    outline: none; 
+    height: 370px; 
+    transition: all 0.1s ease-in-out; 
+    margin-top: 10px; 
+}
