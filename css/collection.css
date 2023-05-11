@@ -51,7 +51,7 @@ li {
 
 .collectionHeader {
     margin-left: 10%; 
-    width: 30%; 
+    width: auto; 
     cursor: pointer; 
 }
 
@@ -81,8 +81,9 @@ li {
     background-color: #fff;
     box-shadow: 0px 15px #5b616b; 
     height: 400px; 
+    min-width: 300px; 
     padding: 20px; 
-    margin-bottom: 4vw; 
+    margin-bottom: 60px; 
     border: solid 5px; 
     border-radius: 10px; 
 }
@@ -93,24 +94,12 @@ li {
     transition: all 0.25s ease-in-out;    
 }
 
-.like-button {
+.like-button, .bookmark-button {
     background-color: white;
     padding: 6px 12px; 
-    margin-right: 20px; 
+    margin-right: 15px; 
     height: 40px; 
-    border: 3px solid; 
-    font-size: 1rem;
-    font-weight: 900;  
-    box-shadow: 0px 5px; 
-    border-radius: 10px; 
-    z-index: 1; 
-}
-
-.bookmark-button {
-    background-color: white;
-    padding: 6px 12px; 
-    margin-right: 20px; 
-    height: 40px; 
+    width: 43%; 
     border: 3px solid; 
     font-size: 1rem;
     font-weight: 900;  
@@ -142,7 +131,8 @@ li {
     box-shadow: 0px 15px #5b616b; 
     height: 400px; 
     padding: 20px; 
-    margin-bottom: 4vw; 
+    min-width: 300px; 
+    margin-bottom: 60px; 
     border: solid 5px; 
     border-radius: 10px; 
 }
@@ -180,7 +170,7 @@ li {
 
 .spotlightHeader {
     margin-left: 10%; 
-    width: 30%; 
+    width: auto; 
     display: none; 
     cursor: pointer; 
 }
@@ -279,6 +269,7 @@ li {
     border-radius: 10px;
     border: solid 5px;
     box-shadow: 0px 15px;  
+    margin-bottom: 50px; 
 }
 
 .comment-section h1 {
@@ -289,7 +280,7 @@ li {
 
 .comment-section textarea {
     width: 100%; 
-    height: 80px; 
+    height: 100px; 
     background-color: #fff;
     border-radius: 10px;
     border: solid 4px;
@@ -303,7 +294,7 @@ li {
 .comment-section textarea:focus {
     outline: none; 
     box-shadow: 0 10px; 
-    height: 90px; 
+    height: 110px; 
     transition: all 0.2s; 
 }
 
@@ -329,4 +320,75 @@ li {
     background-color: #c6acf0;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    .article-grid {
+        grid-template-columns: 47.5% 47.5%; 
+        justify-content: space-between;
+        margin: 60px auto; 
+    }
+
+    .article-compact {
+        height: 350px; 
+    }
+
+    .information {
+        height: 250px; 
+    }
+
+    .statpad {
+        height: auto; 
+    }
+
+    .heading {
+        margin: 40px 0 5px;
+        font-size: 2.5rem;  
+    }
+    
+    .subtitle {
+        font-size: 1.5rem; 
+        width: 100%; 
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .spotlight-canvas {
+        display: none; 
+        width: 80%; 
+        grid-template-columns: 100%; 
+        margin: 40px auto 50px; 
+    }
+
+    .comment-section {
+        margin-top: 40px; 
+    }
+
+    .comment-section textarea {
+        height: 80px; 
+    }
+    
+    .comment-section textarea:focus {
+        height: 90px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .article-grid {
+        grid-template-columns: 100%; 
+    }
+
+    .article-compact {
+        height: 350px; 
+    }
+
+    .information {
+        height: 250px; 
+    }
+
+    .statpad {
+        height: auto; 
+    }
+}
 
