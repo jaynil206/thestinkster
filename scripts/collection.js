@@ -22,7 +22,7 @@ function displayArticle(article) {
     let bookmarkButton = articleCard.querySelector('.bookmark-button'); 
     if (article.saved == true) {
         bookmarkButton.classList.add('selected'); 
-        bookmarkButton.textContent = 'bookmarked';
+        bookmarkButton.textContent = 'saved';
     } 
     // append the element to the parent 
     let articleContainer = document.querySelector('.article-grid'); 
@@ -87,11 +87,11 @@ canvas.addEventListener("click", function(event) {
         // toggle the bookmark button
         searchArray[index].saved = !searchArray[index].saved;
         event.target.classList.toggle('selected', searchArray[index].saved);
-        event.target.textContent = searchArray[index].saved ? 'bookmarked' : 'bookmark';
-        // alert the user how many items they have now bookmarked
-        let count = searchArray.filter(a => a.saved).length;
-        if (searchArray[index].saved) 
-            alert(`Number of stinky opinions saved: ${count}.`);
+        event.target.textContent = searchArray[index].saved ? 'saved' : 'save';
+        // // alert the user how many items they have now bookmarked
+        // let count = searchArray.filter(a => a.saved).length;
+        // if (searchArray[index].saved) 
+        //     alert(`Number of stinky opinions saved: ${count}.`);
         // update the storage
         localStorage.setItem("articles", JSON.stringify(searchArray)); 
     }
@@ -127,7 +127,7 @@ canvas.addEventListener("click", function(event) {
         }
         if (articleData.saved) {
             let bookmarkButton = document.querySelector('.spotlight-bookmark-button')
-            bookmarkButton.textContent = 'bookmarked'; 
+            bookmarkButton.textContent = 'saved'; 
             bookmarkButton.classList.add('selected'); 
         }
         // load the comments 
@@ -162,7 +162,7 @@ backButton.addEventListener('click', function() {
     document.querySelector('.spotlight-like-button').classList.remove('selected');
     document.querySelector('.spotlight-like-button').textContent = 'like';
     document.querySelector('.spotlight-bookmark-button').classList.remove('selected'); 
-    document.querySelector('.spotlight-bookmark-button').textContent = 'bookmark'; 
+    document.querySelector('.spotlight-bookmark-button').textContent = 'save'; 
     // redisplay the bookmarked articles with any new data using earlier function 
     displayCollection(); 
     // alter the css to change from feed view to spotlight view
@@ -202,13 +202,13 @@ bookmarkButton.addEventListener("click", function() {
     // toggle the bookmark button
     searchArray[index].saved = !searchArray[index].saved;
     bookmarkButton.classList.toggle('selected', searchArray[index].saved);
-    bookmarkButton.textContent = searchArray[index].saved ? 'bookmarked' : 'bookmark';
+    bookmarkButton.textContent = searchArray[index].saved ? 'saved' : 'save';
     // update the storage
     localStorage.setItem("articles", JSON.stringify(searchArray));
-    // alert the user how many items they have now bookmarked
-    let count = searchArray.filter(a => a.saved).length;
-    if (searchArray[index].saved) 
-        alert(`Number of stinky opinions saved: ${count}.`);
+    // // alert the user how many items they have now bookmarked
+    // let count = searchArray.filter(a => a.saved).length;
+    // if (searchArray[index].saved) 
+    //     alert(`Number of stinky opinions saved: ${count}.`);
     
 }); 
 
