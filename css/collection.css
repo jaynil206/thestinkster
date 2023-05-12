@@ -143,7 +143,7 @@ li {
 .statpad {
     background-color: #fff;
     box-shadow: 0px 15px #5b616b; 
-    height: 400px; 
+    /* height: 200px;  */
     padding: 20px; 
     min-width: 300px; 
     margin-bottom: 60px; 
@@ -384,22 +384,36 @@ li {
 }
 
 @media (max-width: 768px) {
+    .heading {
+        margin: 0 0 5px;
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem; 
+    }
+    
     .article-grid {
         grid-template-columns: 100%; 
+        margin-top: 40px; 
     }
 
     .article-compact .information {
         height: auto;
     }
 
-    .statpad {
+    .information {
         height: auto; 
     }
 
     /* SPOTLIGHT */ 
 
     .spotlightHeader {
-        margin-left: 5%; 
+        margin-left: 7%; 
+    }
+
+    .spotlightHeader .spotHeading {
+        font-size: 1.5rem; 
     }
 
     .spotlight-canvas {

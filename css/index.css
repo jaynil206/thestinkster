@@ -331,7 +331,11 @@ li {
     /* SPOTLIGHT */ 
 
     .spotlightHeader {
-        margin-left: 5%; 
+        margin-left: 7%; 
+    }
+
+    .spotlightHeader .heading {
+        font-size: 1.5rem; 
     }
 
     .spotlight-canvas {
