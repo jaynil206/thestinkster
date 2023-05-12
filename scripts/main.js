@@ -109,8 +109,10 @@ function displayArticle(article) {
         bookmarkButton.textContent = 'saved';
     } 
     // append the element to the parent 
+    let articleBox = document.createElement('div'); 
+    articleBox.appendChild(articleCard); 
     let articleContainer = document.querySelector('.article-grid'); 
-    articleContainer.appendChild(articleCard); 
+    articleContainer.appendChild(articleBox); 
 }
 
 // let us write a function that deals with likes using event delegation
