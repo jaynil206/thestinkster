@@ -375,11 +375,11 @@ li {
     }
 
     .comment-section textarea {
-        height: 80px; 
+        height: 70px; 
     }
     
     .comment-section textarea:focus {
-        height: 90px; 
+        height: 80px; 
     }
 }
 
@@ -440,5 +440,9 @@ li {
     .comment-section {
         padding: 40px 20px; 
     } 
+
+    .comment-section textarea {
+        padding: 10px; 
+    }
 }
 

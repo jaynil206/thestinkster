@@ -305,7 +305,7 @@ li {
     }
 
     .comment-section {
-        margin-top: 40px; 
+        margin-top: 20px; 
     }
 
     .comment-section textarea {
@@ -362,4 +362,8 @@ li {
     .comment-section {
         padding: 40px 20px; 
     } 
+    
+    .comment-section textarea {
+        padding: 10px; 
+    }
 }
