@@ -305,7 +305,7 @@ li {
     }
 
     .comment-section {
-        margin-top: 40px; 
+        margin-top: 20px; 
     }
 
     .comment-section textarea {
@@ -331,8 +331,11 @@ li {
     /* SPOTLIGHT */ 
 
     .spotlightHeader {
-        margin-top: 30px; 
-        margin-left: 2.5%; 
+        margin-left: 7%; 
+    }
+
+    .spotlightHeader .heading {
+        font-size: 1.5rem; 
     }
 
     .spotlight-canvas {
@@ -359,4 +362,8 @@ li {
     .comment-section {
         padding: 40px 20px; 
     } 
+    
+    .comment-section textarea {
+        padding: 10px; 
+    }
 }
