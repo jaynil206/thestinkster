@@ -8,7 +8,7 @@
     2 - the spotlight view code starts at line 159 (changing the css / displaying comments / like and bookmark functions)
 */
 
-// localStorage.clear(); 
+localStorage.clear(); 
 // first we need to create the article object 
 class Article {
     constructor(title, date, liked, saved, content, comments) {
@@ -67,19 +67,22 @@ let article7 = new Article(
     'why build generational wealth when you can rack up generational debt?',
     '07-02-23',
     false, false, 
-    "dear investors: don't get lost in the sauce 😏😏 lot's of noise these days about 'inflation'... i just bought my third house broski 🙈 how did i pay for it, i hear you ask?? i am in £256,234 debt and owe 15 years of servitude to an albanian crime syndicate (payable in 2035). invest in today and you'll never have to worry about tomorrow. be the klarna baddie you were born to be 😍"
+    "dear investors: don't get lost in the sauce 😏😏 lot's of noise these days about 'inflation'... i just bought my third house broski 🙈 how did i pay for it, i hear you ask?? i am in £256,234 debt and owe 15 years of servitude to an albanian crime syndicate (payable in 2035). invest in today and you'll never have to worry about tomorrow. be the klarna baddie you were born to be 😍",
+    ['']
 ); 
 let article8 = new Article(
     `local ants stage successful protest against homeowner's garden renovation`,
     '12-04-23',
     false, false, 
-    "the Chipping Norton Parish Council have drawn significant press attention following their controversial decision to reject ex-banker Tobias Housley's plans to plant an endagered species of West Caribbean Palm in the 3 acre garden of his £4.3 million home. after hearing of Housley's plans to bring 'island-gyal vibes' to his north-oxfordshire estate, tribal leaders from various clans of the local ant colony colluded to stage 3 weeks of non-violent disruptive action, ranging from slow-marches through the village square, to the kidnapping of the village priest, which prompted an emergency meeting of the Chipping Norton Parish Council. their decision today marks a watershed in arthropodic history. you can hear more about this story tonight on Piers Morgan Live."
+    "the Chipping Norton Parish Council have drawn significant press attention following their controversial decision to reject ex-banker Tobias Housley's plans to plant an endagered species of West Caribbean Palm in the 3 acre garden of his £4.3 million home. after hearing of Housley's plans to bring 'island-gyal vibes' to his north-oxfordshire estate, tribal leaders from various clans of the local ant colony colluded to stage 3 weeks of non-violent disruptive action, ranging from slow-marches through the village square, to the kidnapping of the village priest, which prompted an emergency meeting of the Chipping Norton Parish Council. their decision today marks a watershed in arthropodic history. you can hear more about this story tonight on Piers Morgan Live.",
+    ['']
 ); 
 let article9 = new Article(
     `mirror mirror on the wall, who's the lengest baddie of them all?`,
     '20-06-23',
     false, false, 
-    "you 🙈"
+    "you 🙈",
+    ['']
 ); 
 
 let articleArray = [article1, article2, article3, article4, article5, article6, article7, article8, article9];
