@@ -8,7 +8,7 @@
     2 - the spotlight view code starts at line 159 (changing the css / displaying comments / like and bookmark functions)
 */
 
-localStorage.clear(); 
+// localStorage.clear(); 
 // first we need to create the article object 
 class Article {
     constructor(title, date, liked, saved, content, comments) {
