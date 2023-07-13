@@ -92,9 +92,14 @@ let articleArray = [article1, article2, article3, article4, article5, article6, 
 if (localStorage.getItem("articles")) {
     // use this function to display each article in the database when the website loads
     articleArray = JSON.parse(localStorage.getItem("articles")); 
-    articleArray.forEach(article => {
-        displayArticle(article); 
-    })
+    if (articleArray.length === 9) {
+        articleArray.forEach(article => {
+            displayArticle(article); 
+        })
+    } else {
+        localStorage.clear();
+    }
+    
 } else {
     // if there is no data in storage, then add it
     localStorage.setItem("articles", JSON.stringify(articleArray)); 
