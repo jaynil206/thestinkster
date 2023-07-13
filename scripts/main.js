@@ -10,60 +10,9 @@
 
 // localStorage.clear(); 
 // first we need to create the article object 
-class Article {
-    constructor(title, date, liked, saved, content, comments) {
-        this.title = title;
-        this.date = date; 
-        this.liked = liked; 
-        this.saved = saved; 
-        this.content = content; 
-        this.comments = comments; 
-    }
-}
-// now we can initialise 6 articles to go into the database
-let article1 = new Article(
-    'why henderson is the greatest english footballer of all time',
-    '22-01-23', 
-    false, false, 
-    'wow. i just spent two hours watching jordan henderson highlights and i am speechless!',
-    ['i totally agree - #14 is my boss and my lord']
-); 
-let article2 = new Article(
-    'sources confirm elon musk is the smartest man on the planet',
-    '01-01-23', 
-    false, false, 
-    "experts working at the lex fridman institute of midwit affairs have reached the conclusion that elon is the second coming of ronald macdonald. a spokesperson for the group said that this was a time to celebrate! we at the stinkster could not (dis)agree more.",
-    ['']
-); 
-let article3 = new Article(
-    "does gen z's stupidity explain their struggles in the housing market?",
-    '25-12-22', 
-    false, false, 
-    'youngsters are soft. many are stupid. so is it a surprise that they struggle to get on the housing ladder, particularly in comparison to us boomers? so-called economists have tried to explain this in terms of growing income inequality, but that is simply communist tomfoolery. by the time i was 18 i owned three properties, two cars, and one divorce. so if you are a gen z reading this i have one thing to say: pull yourself up by the bootstraps and cancel your netflix subscription sunshine - it is time to wake up!',
-    ['']
-); 
-let article4 = new Article(
-    'the earth is flat - it is time to stop pretending otherwise.',
-    '07-12-22', 
-    false, false, 
-    "if u are reading this in australia, and you are not currently falling off of the earth towards the depths of hellfire, then i have proven my point. you stopped believing in santa when you were seven ... why continue believing fairtytales now?",
-    ['']
-); 
-let article5 = new Article(
-    'community recycling is actually an FBI domestic surveillance operation',
-    '29-11-22', 
-    false, false, 
-    "don't let liberals tell you that recycling saves the planet. i spent four weeks trailing my local recycling truck to find out where it actually all goes. well, let me tell you. it goes straight to the globalist government. you would be surprised how much you can tell about a person from their waste. now i know why i keep getting adverts for gym memberships and weight loss pills. #stayoutofmytrash",
-    ['']
-); 
-let article6 = new Article(
-    'am i wrong for being suspicious of pineapples?',
-    '05-11-22', 
-    false, false, 
-    'nobody can tell me that they have looked at that spiky, booby-trap of a plant and thought wow i bet this tastes good. something should not look so deadly yet taste so good. i am yet to confirm if this is the work of satan himself or simply one of his interns, but either way i will be steering well clear in the forseeable future. i pray that we are guided to answers soon.',
-    ['']
-); 
 
+// import articles
+import articleArray from './articles'; 
 
 // if there is data in the in local storage, then we can display it
 if (localStorage.getItem("articles")) {
@@ -74,7 +23,6 @@ if (localStorage.getItem("articles")) {
     })
 } else {
     // if there is no data in storage, then add it
-    let articleArray = [article1, article2, article3, article4, article5, article6];
     localStorage.setItem("articles", JSON.stringify(articleArray)); 
     // display the articles 
     articleArray.forEach(article => {
