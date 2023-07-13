@@ -1,3 +1,4 @@
+// this page is just for drafting things
 class Article {
     constructor(title, date, liked, saved, content, comments) {
         this.title = title;
@@ -70,6 +71,6 @@ let article9 = new Article(
     "you 🙈"
 ); 
 
-export default articleArray = [article1, article2, article3, article4, article5, article6, article7, article8, article9]
+let articleArray = [article1, article2, article3, article4, article5, article6, article7, article8, article9]
 
 
