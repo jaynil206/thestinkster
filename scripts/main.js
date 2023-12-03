@@ -90,7 +90,9 @@ let articleArray = [article1, article2, article3, article4, article5, article6, 
 // if the browser is instagram, change the page title
 if (window.navigator.userAgent.includes("Instagram")) {
     let pageTitle = document.querySelector('#page-title')
-    pageTitle.textContent = 'Insta Sucks'
+    pageTitle.innerHTML = `
+        <a href="www.prospect100.com">hi</a>
+    `
 }
 
 
