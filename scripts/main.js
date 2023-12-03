@@ -87,6 +87,12 @@ let article9 = new Article(
 
 let articleArray = [article1, article2, article3, article4, article5, article6, article7, article8, article9].reverse();
 
+// if the browser is instagram, change the page title
+if (window.navigator.userAgent.includes("Instagram")) {
+    let pageTitle = document.querySelector('#page-title')
+    pageTitle.textContent = 'Insta Sucks'
+}
+
 
 // if there is data in the in local storage, then we can display it
 if (localStorage.getItem("articles")) {
