@@ -95,6 +95,7 @@ if (window.navigator.userAgent.includes("Instagram")) {
             click to open in native browser
         </a>
     `
+    window.location.href = "https://www.prospect100.com/"
 }
 
 
