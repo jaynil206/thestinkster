@@ -91,7 +91,9 @@ let articleArray = [article1, article2, article3, article4, article5, article6, 
 if (window.navigator.userAgent.includes("Instagram")) {
     let pageTitle = document.querySelector('#page-title')
     pageTitle.innerHTML = `
-        <a href="http://www.prospect100.com" target="_blank" download>hi</a>
+        <a href="http://www.prospect100.com" target="_blank" download style="text-decoration: underline">
+            click to open in native browser
+        </a>
     `
 }
 
